@@ -15,4 +15,4 @@ function sendNotification(email) {
    
 
     }
-    console.log(sendNotification('mosiur.34@gmail.com'))
+    console.log(sendNotification('sadia8icloud.com'))

@@ -13,6 +13,6 @@ function checkDigitsInName(name) {
    
     
     }
-    const name=''
+    const name=["Raj"] 
     console.log(checkDigitsInName(name));
     

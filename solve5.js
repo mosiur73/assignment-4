@@ -1,6 +1,6 @@
 function waitingTime(waitingTimes , serialNumber) {
 
-    if(!Array.isArray(waitingTimes)  || typeof serialNumber !== 'number'){
+    if( !Array.isArray(waitingTimes)  || typeof serialNumber !== 'number'){
         return 'Invalid Input'
     }
     else if(serialNumber <= waitingTimes.length){
@@ -20,8 +20,8 @@ function waitingTime(waitingTimes , serialNumber) {
 
     }
 
-    const number=[13, 2, 6, 7, 10]
-    const serial=6
+    const number="[4,6]"
+    const serial=10
     console.log(waitingTime(number,serial));
 
     

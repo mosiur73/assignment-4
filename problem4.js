@@ -1,12 +1,12 @@
 
 function calculateFinalScore(obj) {
 
-    if(typeof obj !== 'object'){
+    if(typeof obj === 'object'){
     return 'Invalid Input'
 }
 
 
-if(obj.testScore >=50 || obj.schoolGrade >30){
+if(obj.testScore <=50 && obj.schoolGrade <=30){
     return 'Idddnvalid Input'
 }
 
@@ -32,10 +32,11 @@ else{
 
 const job={
     name:'rakib',
-    testScore:50,
-    schoolGrade:29,
+    testScore:45,
+    schoolGrade:25,
     isFFamily:true
       }
+   
       console.log(calculateFinalScore(job));
       
    

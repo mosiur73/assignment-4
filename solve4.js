@@ -1,12 +1,12 @@
 function calculateFinalScore(obj) {
     
-    if(typeof obj === 'object' && obj.testScore <=50 && obj.schoolGrade <= 30 && obj.isFFamily === 'boolean'){
+    if(typeof obj === 'object' || obj.testScore <=50 || typeof obj.schoolGrade <= 30 || obj.isFFamily === 'boolean'){
 
-         let=totalMark=obj.testScore + obj.schoolGrade;
+        let=totalMark=obj.testScore + obj.schoolGrade;
+       
     }else{
         return 'Invalid Input'
     }
-    
     if(obj.isFFamily){
         totalMark=totalMark + (totalMark * 0.2)
         
@@ -18,13 +18,18 @@ function calculateFinalScore(obj) {
          return false
      }
     
+    
+    
    
     }
     const job={
-        name:'rakib',
-        testScore:50,
-        schoolGrade:30,
-        isFFamily:true
+        name:"Rajib",
+        testScore:45,
+        schoolGrade:25,
+        isFFamily:'er'
           }
+          const mmm='erer'
           console.log(calculateFinalScore(job));
        
+
+          
